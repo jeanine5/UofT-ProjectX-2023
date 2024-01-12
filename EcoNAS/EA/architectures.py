@@ -130,7 +130,7 @@ class NeuralArchitecture:
         """
         Estimates the number of FLOPs for the neural network
         :param input_size: The input size of the neural network. For MNIST, this is (1, 1, 28, 28), for CIFAR-10, this
-        is (1, 3, 32, 32), (1, 18).
+        is (1, 3, 32, 32).
         :return: Returns the number of FLOPs
         """
 
