@@ -56,7 +56,7 @@ class NSGA_II:
         """
         # step 0: initial search space
         if data_name == 'MNIST':
-            regression_trainer = MNISTBenchmark('../SearchSpace/precomputed_datasets/trained_mnist_datasetcsv')
+            regression_trainer = MNISTBenchmark('../SearchSpace/precomputed_datasets/trained_mnist_dataset.csv')
         else:
             regression_trainer = CIFARBenchmark('../SearchSpace/precomputed_datasets/trained_cifar10_dataset.csv')
 

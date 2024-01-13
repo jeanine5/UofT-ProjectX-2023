@@ -8,7 +8,7 @@ from sklearn.tree import DecisionTreeRegressor
 
 
 class MNISTBenchmark:
-    def __init__(self, csv_filename='../SearchSpace/precomputed_datasets/trained_mnist_datasetcsv'):
+    def __init__(self, csv_filename='../SearchSpace/precomputed_datasets/trained_mnist_dataset.csv'):
         self.df = pd.read_csv(csv_filename)
         self.X = self.df[['hidden_layers', 'hidden_sizes_mean', 'max_hidden_size', 'min_hidden_size',
                           'variance_hidden_sizes']]

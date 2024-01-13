@@ -20,4 +20,4 @@ test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=Fa
 benchmark_dataset = BenchmarkDataset()
 architectures = benchmark_dataset.generate_architectures(max_hidden_layers=20, max_hidden_size=200, data_name='MNIST')
 benchmark_dataset.evaluate_architectures(architectures, train_loader, test_loader)
-benchmark_dataset.store_results_to_csv(filename='../precomputed_datasets/trained_mnist_datasetcsv')
+benchmark_dataset.store_results_to_csv(filename='../precomputed_datasets/trained_mnist_dataset.csv')
